@@ -4,6 +4,6 @@ import { MymovieComponent } from "./mymovie/mymovie.component";
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: '/home',  component: MyhomeComponent },
-  { path: '/movie/:id', component: MymovieComponent }
+  { path: 'home',  component: MyhomeComponent },
+  { path: 'movie/:id', component: MymovieComponent }
 ];

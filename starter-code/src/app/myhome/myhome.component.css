@@ -1,0 +1,19 @@
+h1 {
+  text-align: center;
+}
+
+.movies-wrp {
+  display: flex;
+}
+
+.movies-wrp > div {
+  flex-grow: 1;
+  padding: 10px;
+  text-align: center;
+}
+
+.movies-wrp > div img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

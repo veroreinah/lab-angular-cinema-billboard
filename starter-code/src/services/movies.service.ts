@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { movies } from '../sample-movies';
 
-interface Movie {
+export interface Movie {
   id: number;
   title: string;
   poster: string;
