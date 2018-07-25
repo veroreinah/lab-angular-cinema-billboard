@@ -1,7 +1,3 @@
-h1 {
-  text-align: center;
-}
-
 .movies-wrp {
   display: flex;
 }
@@ -13,7 +9,6 @@ h1 {
 }
 
 .movies-wrp > div img {
-  max-width: 100%;
   height: 200px;
   object-fit: cover;
 }

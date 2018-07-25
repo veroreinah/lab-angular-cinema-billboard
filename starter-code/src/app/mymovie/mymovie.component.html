@@ -1,3 +1,36 @@
-<p>
-  mymovie works!
-</p>
+<div class="container">
+  <div>
+    <h2>
+      <span>Room {{movie.room}}</span>
+      {{movie.title}}
+    </h2>
+  </div>
+  <div class="film-wrp">
+    <div class="img-wrp">
+      <img src="{{movie.poster}}" alt="{{movie.title}}">
+    </div>
+    <div>
+      <dl>
+        <dt>Genres</dt>
+        <dd>
+          <div *ngFor="let g of movie.genres">{{g}}</div>
+        </dd>
+        <dt>Year</dt>
+        <dd>{{movie.year}}</dd>
+        <dt>Director</dt>
+        <dd>{{movie.director}}</dd>
+        <dt>Actors</dt>
+        <dd>
+          <div *ngFor="let a of movie.actors">{{a}}</div>
+        </dd>
+        <dt>Schedule</dt>
+        <dd>
+          <div *ngFor="let h of movie.hours">{{h}}</div>
+        </dd>
+        <dt>Synopsis</dt>
+        <dd>{{movie.synopsis}}</dd>
+      </dl>
+      <a class="btn" [routerLink]="['/home']">Home</a>
+    </div>
+  </div>
+</div>
